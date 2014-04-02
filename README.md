@@ -7,7 +7,7 @@ Vim学习笔记
 
 ###字符操作
 
-###基础
+####基础
 * i  进入Insert模式
 * o  进入Insert模式并换行
 * r  replace 替换
