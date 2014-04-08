@@ -83,32 +83,33 @@ Vim学习笔记
 
 概念：
 
- A buffer is the in-memory text of a file.
- A window is a viewport on a buffer.
- A tab page is a collection of windows.
+* A buffer is the in-memory text of a file.
+* A window is a viewport on a buffer.
+* A tab page is a collection of windows.
 ### window
 #### 基础
 
-* Ctrl-W n 创建一个水平新窗口，新建文件  等同于 :new   而:vne则是建立一个垂直分割的窗口
-* Ctrl-W s 创建水平分割窗口，编辑当前Buffer   :sp
-* Ctrl-W v  创建垂直分割窗口，编辑当前Buffer
-* Ctrl-W q  关闭一个分割窗口
-* Ctrl-W r  向右移动窗口*
-* Ctrl-W T  移动窗口到新Tab
-* Ctrl-W
+* `Ctrl-W n` 创建一个水平新窗口，新建文件  等同于 :new   而:vne则是建立一个垂直分割的窗口
+* `Ctrl-W s` 创建水平分割窗口，编辑当前Buffer   :sp
+* `Ctrl-W v`  创建垂直分割窗口，编辑当前Buffer
+* `Ctrl-W q`  关闭一个分割窗口
+* `Ctrl-W r`  向右移动窗口*
+* `Ctrl-W T`  移动窗口到新Tab
+* `Ctrl-W`
 
 #### 进阶
-* Ctrl-W r  向下/向右移动窗口
-* Ctrl-W R 向上/向左移动窗口
-* Ctrl-W K 移动到最顶端，宽度满屏
-* Ctrl-W J 移动到最低，宽度满屏   Ctrl-W H 和 Ctrl-W L 与之同理，分别移动到最左最右 
-* Ctrl-W = 均分窗口
-* Ctrl-W t Ctrl-W K    将两个垂直分割变为水平分割 
-* Ctrl-W t Ctrl-W H    将两个水平分割变为垂直分割
-*  Ctrl-W Shift-T    将窗口移动到tab中 
-* Ctrl-W t makes the first (topleft) window current Ctrl-W K moves the current window to full-width at the very top 
-* Ctrl-W H moves the current window to full-height at far left
-* Ctrl - W R  向右移动
+* `Ctrl-W r`  向下/向右移动窗口
+* `Ctrl-W R` 向上/向左移动窗口
+* `Ctrl-W K` 移动到最顶端，宽度满屏
+* `Ctrl-W J` 移动到最低，宽度满屏   Ctrl-W H 和 Ctrl-W L 与之同理，分别移动到最左最右 
+* `Ctrl-W =` 均分窗口
+* `Ctrl-W t Ctrl-W K`    将两个垂直分割变为水平分割 
+* `Ctrl-W t Ctrl-W H`    将两个水平分割变为垂直分割
+* `Ctrl-W Shift-T`    将窗口移动到tab中 
+* `Ctrl-W t` makes the first (topleft) window current Ctrl-W K moves the current window to full-width at the very top 
+* `Ctrl-W H` moves the current window to full-height at far left
+* `Ctrl - W R`  向右移动
+
 ### tab
 #### 基础
 * `gt` 向左移动
