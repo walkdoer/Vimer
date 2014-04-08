@@ -86,6 +86,7 @@ Vim学习笔记
 * A buffer is the in-memory text of a file.
 * A window is a viewport on a buffer.
 * A tab page is a collection of windows.
+
 ### window
 #### 基础
 
@@ -121,7 +122,7 @@ Vim学习笔记
 * :tabonly 关闭其他窗口
 
 
-##内容查找替换
+## [内容查找替换](http://vim.wikia.com/wiki/Searching%20)
 
 ### 文件内查找替换
 [addr]s/源字符串/目的字符串/[option]
@@ -133,8 +134,10 @@ Vim学习笔记
 `:%s/foo/bar/g` 将整个文件中的foo替换为bar，不需要确认
 
 ###跨文件文件查找
-`vimgrep  /{pattern}/[g][j]   files`
-例如查找js文件中 function1`
+
+使用：`vimgrep  /{pattern}/[g][j]   files`
+
+例如:查找目录pulibc/js下的文件中是否有 function1
 `vimgrep  /function1/  ./public/js/**/*.js`
 
 :copen 打开quickfix
