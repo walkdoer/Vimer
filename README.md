@@ -79,7 +79,7 @@ Vim学习笔记
 * :bp  prev buffer
 * :e <filename> will just open into a new buffer. 
 
-## 窗口管理
+## [窗口管理](http://vimdoc.sourceforge.net/htmldoc/windows.html)
 
 概念：
 
