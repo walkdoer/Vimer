@@ -113,5 +113,17 @@ vmap <s-tab> <gv
 * :omap - Display operator pending mode maps
 参考: (给vim自定义快捷键)[http://www.pythonclub.org/linux/vim/map]
 
+
+## 組合技
+
+### 常用
+* `$ a` $  跳到行尾，a 在最后位置开始输入
+* `gg“+yG`    将文件内容复制到剪贴版     gg跳到第一行  “+ 选择存放的寄存器  yG复制所有行数
+* visual模式下
+    * `a(   a)   ab`  选择括号和括号里面的内容   ( content )
+    * `i(   i)   ib` 选择括号里面的内容       ( content ) 
+    * `‘  “    [`  这些都可以与上同理 例如  i’ 选择单引号里面的内容，a[ 选择中括号和中括号里面的内容
+* ciw 改变单词
+
 ## 资料
 1. [What is your most productive shortcut with Vim?](http://stackoverflow.com/questions/1218390/what-is-your-most-productive-shortcut-with-vim/1220118220118)
