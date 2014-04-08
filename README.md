@@ -79,15 +79,14 @@ Vim学习笔记
 * :bp  prev buffer
 * :e <filename> will just open into a new buffer. 
 
-### 窗口管理
+## 窗口管理
 
 概念：
 
  A buffer is the in-memory text of a file.
  A window is a viewport on a buffer.
  A tab page is a collection of windows.
-
-
+### window
 #### 基础
 
 * Ctrl-W n 创建一个水平新窗口，新建文件  等同于 :new   而:vne则是建立一个垂直分割的窗口
@@ -110,7 +109,19 @@ Vim学习笔记
 * Ctrl-W t makes the first (topleft) window current Ctrl-W K moves the current window to full-width at the very top 
 * Ctrl-W H moves the current window to full-height at far left
 * Ctrl - W R  向右移动
+### tab
+#### 基础
+* `gt` 向左移动
+* `gT` 向右移动
+* `ngt`  移动到第n个
 
+#### 进阶
+* :tabm n 移动当前tab的位置，如果要将tab的位置移动到最后，可以输一个足够大的值 tabm 99 就可以移动到最后了 tabm 0移动到最前
+* :tabonly 关闭其他窗口
+
+
+参考
+1. [tab使用秘籍](http://vim.wikia.com/wiki/Quick_tips_for_using_tab_pages)
 
 ## 参见问题
 
