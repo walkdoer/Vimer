@@ -5,9 +5,9 @@ Vim学习笔记
 ## 技巧
 
 
-###字符操作
+### 字符操作
 
-####基础
+#### 基础
 * i  进入Insert模式
 * o  进入Insert模式并换行
 * r  replace 替换
@@ -16,15 +16,15 @@ Vim学习笔记
 * P  黏贴于光标前
 * visual 模式下面的字符串选择
 
-####进阶
+#### 进阶
 * ]p 自動indent的黏貼
 * :n1,n2 m n3     移动n1-n2行(包括n1,n2)到n3行之下；
 * :n1,n2 co n3    复制n1-n2行(包括n1,n2)到n3行之下；
 * :n1,n2 d        删除n1-n2行(包括n1,n2)行
 
-###光标移动
+### 光标移动
 
-####基础
+#### 基础
 * gg 首行
 * G  尾行
 * 80% 文件80%处
@@ -42,7 +42,7 @@ Vim学习笔记
 * * 移動到下一個與當前單詞一樣的單詞
 * # 移動到下一個與當前單詞一樣的單詞
 
-####进阶
+#### 进阶
 
 * H 跳到窗口顶部
 * M 跳到窗口中央
@@ -60,7 +60,16 @@ Vim学习笔记
   * gUU(当前行变大写) g~~(当前行大小写切换) guu （当前行变小写）
   * 可以跟上w, b,$, ^等来自由发挥， 例如  gu3w  将前面3个单词变小写  同理的还有 gu3b  gU3w  g~$   g~^等等
 
+### 文件操作
+
+#### 基础
+* :e 编辑某一个文件或者目录
+* vim -o file….  水平分割打开几个文件
+* vim -O file…  垂直分割打开几个文件
+* :new filename 在新窗口打开查看文件
+* :vert new filename 水平分割打开新窗口
+* :tab new 在新tab创建文件
 
 
 ## 资料
-1. [What is your most productive shortcut with Vim?](http://stackoverflow.com/questions/1218390/what-is-your-most-productive-shortcut-with-vim/1220118#1220118)
+1. [What is your most productive shortcut with Vim?](http://stackoverflow.com/questions/1218390/what-is-your-most-productive-shortcut-with-vim/1220118220118)
