@@ -81,5 +81,37 @@ Vim学习笔记
 
 
 
+###参见问题
+
+####如何定义快捷键
+
+```:map <F5> i{e<Esc>a}<Esc>```
+
+i{将插入字符{，然后使用Esc退回到命令状态；接着用e移到单词结尾，a}增加字符}，最后退至命令状态。在执行以上命令之后，光标定位在一个单词上（例如amount），按下F5键，这时字符就会变成{amount}的形式。
+
+使用以下命令，可以在Normal Mode和Visual/Select Mode下，利用Tab键和Shift-Tab键来缩进文本：
+
+```
+nmap <tab> V>
+nmap <s-tab> V<
+vmap <tab> >gv
+vmap <s-tab> <gv
+```
+
+使用以下命令，指定F10键来新建标签页：
+
+```
+:map <F10> <Esc>:tabnew<CR>
+```
+
+* :nmap - Display normal mode maps
+* :imap - Display insert mode maps
+* :vmap - Display visual and select mode maps
+* :smap - Display select mode maps
+* :xmap - Display visual mode maps
+* :cmap - Display command-line mode maps
+* :omap - Display operator pending mode maps
+参考: (给vim自定义快捷键)[http://www.pythonclub.org/linux/vim/map]
+
 ## 资料
 1. [What is your most productive shortcut with Vim?](http://stackoverflow.com/questions/1218390/what-is-your-most-productive-shortcut-with-vim/1220118220118)
