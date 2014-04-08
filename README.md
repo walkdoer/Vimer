@@ -79,11 +79,17 @@ Vim学习笔记
 * :bp  prev buffer
 * :e <filename> will just open into a new buffer. 
 
+### 窗口管理
 
+概念：
 
-###参见问题
+ A buffer is the in-memory text of a file.
+ A window is a viewport on a buffer.
+ A tab page is a collection of windows. 
 
-####如何定义快捷键
+## 参见问题
+
+###如何定义快捷键
 
 ```:map <F5> i{e<Esc>a}<Esc>```
 
