@@ -121,6 +121,24 @@ Vim学习笔记
 * :tabonly 关闭其他窗口
 
 
+##内容查找替换
+
+### 文件内查找替换
+[addr]s/源字符串/目的字符串/[option]
+
+[addr] 表示检索范围，省略时表示当前行。如：“1，20” ：表示从第1行到20行；“%” ：表示整个文件，同“1,$”；“. ,$” ：从当前行到文件尾；
+[option] : 表示操作类型   如：g 表示全局替换; c 表示进行确认 p 表示替代结果逐行显示（Ctrl + L恢复屏幕）； 
+
+
+`:%s/foo/bar/g` 将整个文件中的foo替换为bar，不需要确认
+
+###跨文件文件查找
+`vimgrep  /{pattern}/[g][j]   files`
+例如查找js文件中 function1`
+`vimgrep  /function1/  ./public/js/**/*.js`
+
+:copen 打开quickfix
+
 参考
 1. [tab使用秘籍](http://vim.wikia.com/wiki/Quick_tips_for_using_tab_pages)
 
