@@ -63,12 +63,22 @@ Vim学习笔记
 ### 文件操作
 
 #### 基础
-* :e 编辑某一个文件或者目录
 * vim -o file….  水平分割打开几个文件
 * vim -O file…  垂直分割打开几个文件
 * :new filename 在新窗口打开查看文件
 * :vert new filename 水平分割打开新窗口
 * :tab new 在新tab创建文件
+
+### buffer的操作
+
+####基础
+* :ls 或者 :buffers 查看buffer列表
+* :vert sb N   在垂直窗口打开列表
+* :bfirst 去到第一个buffer
+* :bn  next buffer
+* :bp  prev buffer
+* :e <filename> will just open into a new buffer. 
+
 
 
 ## 资料
