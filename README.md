@@ -214,3 +214,6 @@ vmap <s-tab> <gv
 1. [What is your most productive shortcut with Vim?](http://stackoverflow.com/questions/1218390/what-is-your-most-productive-shortcut-with-vim/1220118220118)
 2. [Vim代码高亮主题](http://bytefluent.com/vivify/)
 3. [Best Vim Tips](http://vim.wikia.com/wiki/Best_Vim_Tips)
+4. [Vim Plugins](https://github.com/joyent/node/wiki/Vim-Plugins)
+5. [Use Vim like an IDE](http://vim.wikia.com/wiki/Use_Vim_like_an_IDE)
+
