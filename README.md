@@ -142,6 +142,14 @@ Vim学习笔记
 
 :copen 打开quickfix
 
+#### 快捷键
+---
+:cprev[ious]: [q
+:cnext:       ]q
+:cfirst:      [Q
+:clast:       ]Q
+---
+
 参考
 1. [tab使用秘籍](http://vim.wikia.com/wiki/Quick_tips_for_using_tab_pages)
 
