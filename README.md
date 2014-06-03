@@ -220,3 +220,4 @@ vmap <s-tab> <gv
 4. [Vim Plugins](https://github.com/joyent/node/wiki/Vim-Plugins)
 5. [Use Vim like an IDE](http://vim.wikia.com/wiki/Use_Vim_like_an_IDE)
 6. [VIM的各种助记图，可以作为桌面](http://overapi.com/vim/)
+7. [VIM查找替换归纳总结](http://wdicc.com/search-in-vim/)
