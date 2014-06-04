@@ -203,15 +203,16 @@ vmap <s-tab> <gv
 ## 插件列表
 
 
-* vim-scripts / Visual-Mark  https://github.com/vim-scripts/Visual-Mark/      
-* kien / ctrlp.vim   https://github.com/kien/ctrlp.vim  轻量级的文件切换工具 
-* SirVer / ultisnips  https://github.com/SirVer/ultisnips    神级插件 http://fueledbylemons.com/blog/2011/07/27/why-ultisnips/  
-* terryma / vim-multiple-cursors   实现Sublime的Ctrl-D功能 多行同时编辑
-* tpope / vim-unimpaired   可以方便的执行:lprev ( [l ), :lne( ]l )的命令，还有可以实现移动行  [e ]e 类似于Sublime的 移动行 
+* vim-scripts/Visual-Mark  https://github.com/vim-scripts/Visual-Mark/      
+* kien/ctrlp.vim   https://github.com/kien/ctrlp.vim  轻量级的文件切换工具 
+* SirVer/ultisnips  https://github.com/SirVer/ultisnips    神级插件 http://fueledbylemons.com/blog/2011/07/27/why-ultisnips/  
+* terryma/vim-multiple-cursors   实现Sublime的Ctrl-D功能 多行同时编辑
+* tpope/vim-unimpaired   可以方便的执行:lprev ( [l ), :lne( ]l )的命令，还有可以实现移动行  [e ]e 类似于Sublime的 移动行 
 * tpope/commentary.vim  注释插件
 * tabular 方便文本对齐 https://github.com/godlygeek/tabular
 * Ack 搜索关键词 https://github.com/mileszs/ack.vim 
 * mru https://github.com/yegappan/mru 最近打开的文件
+* heavenshell/vim-jsdoc [github](https://github.com/heavenshell/vim-jsdoc)
 
 ## 资料
 1. [What is your most productive shortcut with Vim?](http://stackoverflow.com/questions/1218390/what-is-your-most-productive-shortcut-with-vim/1220118220118)
