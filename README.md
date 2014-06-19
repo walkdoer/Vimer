@@ -10,10 +10,13 @@ Vim学习笔记
 #### 基础
 * i  进入Insert模式
 * o  进入Insert模式并换行
+* s  允许使用多个字符替换一个单个的字符（以插入方式替换）。
 * r  replace 替换
+* R  替换多个字符（以覆盖方式替换）
 * a  append 追加
 * p  黏贴于光标后
 * P  黏贴于光标前
+* C  允许替换从当前光标位置到本行末尾的所有字符。
 * visual 模式下面的字符串选择
 
 #### 进阶
@@ -192,6 +195,8 @@ vmap <s-tab> <gv
 ## 組合技
 
 ### 常用
+* xp 字符互换
+* ddp 上下行换行
 * `$ a` $  跳到行尾，a 在最后位置开始输入
 * `gg“+yG`    将文件内容复制到剪贴版     gg跳到第一行  “+ 选择存放的寄存器  yG复制所有行数
 * visual模式下
@@ -199,6 +204,7 @@ vmap <s-tab> <gv
     * `i(   i)   ib` 选择括号里面的内容       ( content ) 
     * `‘  “    [`  这些都可以与上同理 例如  i’ 选择单引号里面的内容，a[ 选择中括号和中括号里面的内容
 * ciw 改变单词
+* caw 改变光标所在的完整一个单词
 
 ## 插件列表
 
@@ -222,3 +228,4 @@ vmap <s-tab> <gv
 5. [Use Vim like an IDE](http://vim.wikia.com/wiki/Use_Vim_like_an_IDE)
 6. [VIM的各种助记图，可以作为桌面](http://overapi.com/vim/)
 7. [VIM查找替换归纳总结](http://wdicc.com/search-in-vim/)
+8. [文件夹查找插件](http://blog.hugeaim.com/2012/05/11/find-in-folder-in-vim-with-nerdtree-and-ack/)
