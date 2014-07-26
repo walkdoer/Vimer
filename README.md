@@ -272,7 +272,34 @@ let &colorcolumn="80,".join(range(120,999),",”)
 
 ## 插件列表
 
-
+### my bundle list
+```
+Bundle 'gmarik/vundle'
+Bundle 'tpope/vim-fugitive'
+Bundle 'Lokaltog/vim-easymotion'
+Bundle 'tpope/vim-rails.git'
+Bundle 'rstacruz/sparkup', {'rtp': 'vim/'}
+Bundle 'L9'
+Bundle 'FuzzyFinder'
+Bundle 'scrooloose/nerdtree'
+Bundle 'Lokaltog/vim-powerline'
+Bundle 'scrooloose/syntastic'
+Bundle 'kien/ctrlp.vim'
+Bundle 'kchmck/vim-coffee-script'
+Bundle 'tpope/vim-unimpaired'
+Bundle 'SirVer/ultisnips'
+Bundle 'honza/vim-snippets'
+Bundle 'majutsushi/tagbar'
+Bundle 'ervandew/supertab'
+Bundle 'Shougo/neocomplcache.vim'
+Bundle 'terryma/vim-multiple-cursors'
+Bundle 'Raimondi/delimitMate'
+Bundle 'tpope/vim-surround'
+Bundle 'EasyGrep'
+Bundle 'mileszs/ack.vim'
+Bundle 'tyok/nerdtree-ack'
+```
+### 相关介绍
 * vim-scripts/Visual-Mark  https://github.com/vim-scripts/Visual-Mark/      
 * kien/ctrlp.vim   https://github.com/kien/ctrlp.vim  轻量级的文件切换工具 
 * SirVer/ultisnips  https://github.com/SirVer/ultisnips    神级插件 http://fueledbylemons.com/blog/2011/07/27/why-ultisnips/  
