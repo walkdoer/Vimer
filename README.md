@@ -192,6 +192,70 @@ vmap <s-tab> <gv
 参考: (给vim自定义快捷键)[http://www.pythonclub.org/linux/vim/map]
 
 
+
+###如何重新reload .vimrc文件?
+
+如果当前编辑的就是.vimrc文件  :so %
+
+如果不是 :so 
+
+###什么是filetype
+     
+[refer](http://vimdoc.sourceforge.net/htmldoc/filetype.html)
+
+###如何在split window打开buffer列表中的buffer
+
+:vert sb N (N是buffer序号)
+:vert belowright sb N  在右边split打开，默认是左边 
+
+###如何设置 tab 和 space的展现形式
+
+
+###黏贴的时候不要自动indent
+
+黏贴前运行 command :set pastell
+
+
+###如何设置tab
+
+http://tedlogan.com/techblog3.html
+
+### 神马是Compatible mode
+http://superuser.com/questions/543317/what-is-compatible-mode-in-vim
+
+### 如何控制縮進？
+  
+  n>>  將n行同時縮進  n<<同理
+  >% 縮進curly braces{}包裹的區域 <％ton
+  <nG  縮進當前行到第n行的內容
+  >i{ 縮進inner Block <i{ 同理
+  http://stackoverflow.com/questions/235839/how-do-i-indent-multiple-lines-quickly-in-vi
+
+### 如何在Vim使用鼠标？
+
+   set mouse=a
+   参考：http://usevim.com/2012/05/16/mouse/  
+
+### 如何显示多余的空格
+
+那么可以在vimrc 中使用下面这段代码
+```
+highlight ExtraWhitespace ctermbg=red guibg=redmatch ExtraWhitespace /\s\+$/autocmd BufWinEnter * match ExtraWhitespace /\s\+$/autocmd InsertEnter * match ExtraWhitespace /\s\+\%#\@<!$/autocmd InsertLeave * match ExtraWhitespace /\s\+$/ 
+:set list listchars=tab:>-,trail:.,extends:>" Enter the middle-dot by pressing Ctrl-k then .M:set list listchars=tab:\|_,trail:·" Enter the right-angle-quote by pressing Ctrl-k then >>:set list listchars=tab:»·,trail:·" Enter the Pilcrow mark by pressing Ctrl-k then PI:set list listchars=tab:>-,eol:¶" The command :dig displays other digraphs you can use.
+```
+[参考](http://vim.wikia.com/wiki/Highlight_unwanted_spaces)
+
+
+### 如何维护函数不超过 80行
+
+```
+let &colorcolumn=join(range(81,999),",")
+let &colorcolumn="80,".join(range(120,999),",”)
+```
+
+[参考](http://stackoverflow.com/questions/2447109/showing-a-different-background-colour-in-vim-past-80-characters)
+
+
 ## 組合技
 
 ### 常用
@@ -219,6 +283,7 @@ vmap <s-tab> <gv
 * Ack 搜索关键词 https://github.com/mileszs/ack.vim 
 * mru https://github.com/yegappan/mru 最近打开的文件
 * heavenshell/vim-jsdoc [github](https://github.com/heavenshell/vim-jsdoc)
+* tyok/nerdtree-ack  将nerdTree和ack结合起来，实现文件夹搜索
 
 ## 资料
 1. [What is your most productive shortcut with Vim?](http://stackoverflow.com/questions/1218390/what-is-your-most-productive-shortcut-with-vim/1220118220118)
